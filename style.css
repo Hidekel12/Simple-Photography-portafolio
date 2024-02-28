@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #f2f2f2,
+    #e5e5e5,
+    #d8d8d8,
+    #bbbbbb,
+    #a0a0a0,
+    #858585,
+    #6b6b6b
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 2rem;
+}
+HEADER IMG {
+  filter: drop-shadow(15px 5px gray);
+  width: 20%;
+}
+nav {
+  padding-right: 5%;
+}
+
+.menu {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inicio {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  padding: 0 10px;
+}
+
+.content {
+  display: grid;
+  gap: 6px;
+  max-width: 600px;
+}
+
+.inicio img {
+  width: 50%;
+  border-radius: 10px;
+}
+.content h1 {
+  font-size: 400%;
+  font-family: "protest strike";
+}
+.GRIS {
+  color: gray;
+}
+.content h2 {
+  font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.BUTTON {
+  font-size: 200%;
+  gap: 3%;
+  display: flex;
+}
+
+.BUTTON A {
+  color: black;
+}
+.INSTAGRAM {
+  border-radius: 30%;
+  border-color: black;
+  outline: 2px solid black;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+.INSTAGRAM:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+  color: rgb(255, 0, 157);
+}
+.facebook {
+  border-radius: 30%;
+  border-color: black;
+  outline: 2px solid black;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+.facebook:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+  color: rgb(20, 1, 197);
+}
+.TELEFONO {
+  border-radius: 30%;
+  border-color: black;
+  outline: 2px solid black;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+.TELEFONO:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+  color: yellow;
+}
+.CORREO {
+  border-radius: 30%;
+  border-color: black;
+  outline: 2px solid black;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+}
+.CORREO:hover {
+  outline-offset: 3px;
+  transition: all 0.3s;
+  color: rgba(204, 139, 0, 0.932);
+}
+
+.slider {
+  height: 20rem;
+  width: 36rem;
+  box-shadow: 20px 20px 10px grey;
+  background-size: 100% 100%;
+  animation: slider 15s linear infinite;
+  border-radius: 10px;
+  background-image: url(WhatsApp\ Image\ 2024-02-27\ at\ 6.16.19\ AM.jpeg);
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(fondo.jpeg);
+  }
+  20% {
+    background-image: url(fondo1.jpeg);
+  }
+  36% {
+    background-image: url(view1.jpeg);
+  }
+
+  50% {
+    background-image: url(view2.jpeg);
+  }
+}
+
+.TEXT1 {
+  display: flex;
+  font-size: 500%;
+  justify-content: center;
+  font-family: "poppins";
+  text-transform: uppercase;
+
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.CATEGORIAS {
+  display: flex;
+  margin-top: -7px;
+}
+.animacion1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.animacion1 img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 70%;
+  height: 80%;
+  border-radius: 10px;
+}
+.animacion2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.animacion2 img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 70%;
+  height: 80%;
+  border-radius: 10px;
+}
+.cathegory {
+  position: absolute;
+  background-color: rgb(3, 3, 3, 0.37);
+  width: 35%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.cathegory:hover {
+  opacity: 1;
+}
+.cathegory a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "protest strike";
+}
